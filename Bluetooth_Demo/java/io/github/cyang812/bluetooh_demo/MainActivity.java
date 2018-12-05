@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity  {
 
         public boolean onTouch(View v, MotionEvent event) {
             switch (v.getId()){
-                case R.id.imagebutton1:
+                case R.id.imagebutton1:   //前进按钮
                     if(event.getAction() == MotionEvent.ACTION_UP){//放开事件
                         message[0]= (byte) 0x40;//设置要发送的数值
                         bluesend(message);//发送数值
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity  {
                         Log.d("cy08",""+message[0]);
                     }
                     break;
-                case R.id.imagebutton2:
+                case R.id.imagebutton2://左转按钮
                     if(event.getAction() == MotionEvent.ACTION_UP){//按下事件
                         message[0]= (byte) 0x40;//设置要发送的数值
                         bluesend(message);//发送数值
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity  {
                         Log.d("cy08",""+message[0]);
                     }
                     break;
-                case R.id.imagebutton3:
+                case R.id.imagebutton3://右转按钮
                     if(event.getAction() == MotionEvent.ACTION_UP){//按下事件
                         message[0]= (byte) 0x40;//设置要发送的数值
                         bluesend(message);//发送数值
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity  {
                         Log.d("cy08",""+message[0]);
                     }
                     break;
-                case R.id.imagebutton4:
+                case R.id.imagebutton4://后退按钮
                     if(event.getAction() == MotionEvent.ACTION_UP){//按下事件
                         message[0]= (byte) 0x40;//设置要发送的数值
                         bluesend(message);//发送数值
@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity  {
                         Log.d("cy08",""+message[0]);
                     }
                     break;
-                case R.id.imagebutton5:
+                case R.id.imagebutton5://停止按钮
                     if(event.getAction() == MotionEvent.ACTION_UP){//按下事件
                         message[0]= (byte) 0x40;//设置要发送的数值
                         bluesend(message);//发送数值
